@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Lato", sans-serif;
+
+  --color-rolex-green: #005632;
+  --color-rolex-gold: #D4AF37;
+  --color-rolex-black: #000000;
+  --color-rolex-ivory: #FFFFF0;
+  --color-rolex-emerald: #50C878;
+}
+
+@layer base {
+  body {
+    @apply bg-rolex-ivory text-rolex-black font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gold-glow:hover {
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
