@@ -39,12 +39,17 @@ export default function TourMap() {
             </p>
             <div className="space-y-4">
               {locations.map((loc, i) => (
-                <div key={i} className="flex items-center gap-4 group">
+                <motion.div 
+                  key={i}
+                  whileHover={{ x: 5, color: "#D4AF37" }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  className="flex items-center gap-4 group"
+                >
                   <span className="w-8 h-8 rounded-full bg-rolex-green text-rolex-ivory flex items-center justify-center text-xs font-bold group-hover:bg-rolex-gold transition-colors">
                     {loc.day}
                   </span>
                   <span className="text-rolex-black font-medium">{loc.name}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </motion.div>

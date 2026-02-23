@@ -15,8 +15,11 @@ export default function LanguageSwitcher() {
         <div className="p-2 text-rolex-gold">
           <Globe size={16} />
         </div>
-        <button
+        <motion.button
           onClick={() => setLanguage('en')}
+          whileTap={{ scale: 0.95 }}
+          whileHover={language === 'en' ? { scale: 1.1 } : {}}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
             language === 'en' 
               ? 'bg-rolex-gold text-rolex-black shadow-lg' 
@@ -24,9 +27,12 @@ export default function LanguageSwitcher() {
           }`}
         >
           EN
-        </button>
-        <button
+        </motion.button>
+        <motion.button
           onClick={() => setLanguage('fi')}
+          whileTap={{ scale: 0.95 }}
+          whileHover={language === 'fi' ? { scale: 1.1 } : {}}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
             language === 'fi' 
               ? 'bg-rolex-gold text-rolex-black shadow-lg' 
@@ -34,7 +40,7 @@ export default function LanguageSwitcher() {
           }`}
         >
           FI
-        </button>
+        </motion.button>
       </motion.div>
     </div>
   );

@@ -141,7 +141,12 @@ function ItineraryItem({ item, index }: ItineraryItemProps) {
     >
       {/* Image Side */}
       <div className="flex-1 w-full overflow-hidden rounded-2xl">
-        <motion.div style={{ y }} className="relative group">
+        <motion.div 
+          style={{ y }}
+          whileHover={{ scale: 1.05, boxShadow: "0 15px 30px rgba(0,0,0,0.2)" }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          className="relative group"
+        >
           <img 
             src={item.image} 
             alt={item.title}

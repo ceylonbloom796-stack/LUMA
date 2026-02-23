@@ -37,6 +37,8 @@ export default function About() {
 
         <motion.div
           style={{ y }}
+          whileHover={{ scale: 1.02, boxShadow: "0 20px 40px rgba(0,0,0,0.2)" }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
           className="relative"
         >
           <div className="absolute -inset-4 border border-rolex-gold/30 rounded-2xl -z-10" />

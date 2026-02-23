@@ -33,7 +33,8 @@ export default function Gallery() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -5, boxShadow: "0 10px 20px rgba(0,0,0,0.1)" }}
+              transition={{ delay: index * 0.1, type: "spring", stiffness: 400, damping: 10 }}
               className="relative group overflow-hidden rounded-xl"
             >
               <img 

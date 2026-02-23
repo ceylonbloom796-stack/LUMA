@@ -46,7 +46,8 @@ export default function Tours() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -10, boxShadow: "0 15px 30px rgba(212, 175, 55, 0.2)" }}
+              transition={{ delay: index * 0.1, type: "spring", stiffness: 400, damping: 10 }}
               className="group relative overflow-hidden rounded-lg border border-rolex-gold/20 hover:border-rolex-gold transition-colors"
             >
               <div className="aspect-[3/4] overflow-hidden">

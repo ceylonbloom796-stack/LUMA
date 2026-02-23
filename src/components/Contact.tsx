@@ -17,7 +17,11 @@ export default function Contact() {
             <p className="text-rolex-black/70 mb-12 text-lg">{t.contact.subtitle}</p>
             
             <div className="space-y-6">
-              <div className="flex items-center gap-4">
+              <motion.div 
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="flex items-center gap-4"
+              >
                 <div className="w-12 h-12 rounded-full bg-rolex-green/10 flex items-center justify-center text-rolex-green">
                   <Phone size={20} />
                 </div>
@@ -25,8 +29,12 @@ export default function Contact() {
                   <p className="text-xs uppercase tracking-widest text-rolex-black/40">Call Us</p>
                   <p className="font-serif text-lg">+94 11 234 5678</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4">
+              </motion.div>
+              <motion.div 
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="flex items-center gap-4"
+              >
                 <div className="w-12 h-12 rounded-full bg-rolex-green/10 flex items-center justify-center text-rolex-green">
                   <Mail size={20} />
                 </div>
@@ -34,8 +42,12 @@ export default function Contact() {
                   <p className="text-xs uppercase tracking-widest text-rolex-black/40">Email Us</p>
                   <p className="font-serif text-lg">concierge@luma.travel</p>
                 </div>
-              </div>
-              <div className="flex items-center gap-4">
+              </motion.div>
+              <motion.div 
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="flex items-center gap-4"
+              >
                 <div className="w-12 h-12 rounded-full bg-rolex-green/10 flex items-center justify-center text-rolex-green">
                   <MapPin size={20} />
                 </div>
@@ -43,19 +55,34 @@ export default function Contact() {
                   <p className="text-xs uppercase tracking-widest text-rolex-black/40">Visit Us</p>
                   <p className="font-serif text-lg">Galle Face Terrace, Colombo 03, Sri Lanka</p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="mt-12 flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all">
+              <motion.a 
+                href="#"
+                whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
+              >
                 <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all">
+              </motion.a>
+              <motion.a 
+                href="#"
+                whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
+              >
                 <Facebook size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all">
+              </motion.a>
+              <motion.a 
+                href="#"
+                whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
+              >
                 <Youtube size={18} />
-              </a>
+              </motion.a>
             </div>
           </motion.div>
 
