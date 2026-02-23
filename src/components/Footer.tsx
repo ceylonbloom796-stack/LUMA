@@ -27,7 +27,7 @@ export default function Footer() {
             <ul className="space-y-4 text-rolex-ivory/70">
               <li>
                 <motion.a 
-                  href="#"
+                  href="/about"
                   whileHover={{ x: 5, color: "#D4AF37" }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   className="hover:text-rolex-gold transition-colors"
@@ -35,7 +35,7 @@ export default function Footer() {
               </li>
               <li>
                 <motion.a 
-                  href="#"
+                  href="/tours"
                   whileHover={{ x: 5, color: "#D4AF37" }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   className="hover:text-rolex-gold transition-colors"
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
               <li>
                 <motion.a 
-                  href="#"
+                  href="/hotels"
                   whileHover={{ x: 5, color: "#D4AF37" }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   className="hover:text-rolex-gold transition-colors"
@@ -51,7 +51,7 @@ export default function Footer() {
               </li>
               <li>
                 <motion.a 
-                  href="#"
+                  href="/contact"
                   whileHover={{ x: 5, color: "#D4AF37" }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   className="hover:text-rolex-gold transition-colors"
@@ -69,7 +69,9 @@ export default function Footer() {
             <h4 className="text-sm uppercase tracking-widest text-rolex-gold mb-6">Newsletter</h4>
             <p className="text-rolex-ivory/50 mb-4 text-sm">Subscribe for exclusive travel insights and offers.</p>
             <div className="flex">
+              <label htmlFor="footer-newsletter-email" className="sr-only">Email Address</label>
               <input 
+                id="footer-newsletter-email"
                 type="email" 
                 placeholder="Email Address" 
                 className="bg-white/5 border border-white/10 px-4 py-2 rounded-l-lg focus:outline-none focus:border-rolex-gold flex-1"
@@ -88,8 +90,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-rolex-ivory/30">
           <p>© 2026 Luma Travel. All rights reserved.</p>
           <div className="flex gap-8">
-            <a href="#" className="hover:text-rolex-gold transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-rolex-gold transition-colors">Terms of Service</a>
+            <a href="/privacy" className="hover:text-rolex-gold transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-rolex-gold transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

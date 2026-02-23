@@ -32,7 +32,9 @@ export default function Newsletter() {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
+          <label htmlFor="newsletter-email" className="sr-only">{t.newsletter.placeholder}</label>
           <input
+            id="newsletter-email"
             type="email"
             placeholder={t.newsletter.placeholder}
             className="flex-grow px-6 py-3 rounded-full border border-rolex-gold bg-white text-rolex-black focus:outline-none focus:ring-2 focus:ring-rolex-gold"

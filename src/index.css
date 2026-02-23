@@ -13,6 +13,7 @@
 }
 
 @layer base {
+  html { scroll-behavior: smooth; }
   body {
     @apply bg-rolex-ivory text-rolex-black font-sans;
 

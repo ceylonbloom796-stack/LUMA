@@ -60,7 +60,9 @@ export default function Contact() {
 
             <div className="mt-12 flex gap-4">
               <motion.a 
-                href="#"
+                href="https://www.instagram.com/lumatravel"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
@@ -68,7 +70,9 @@ export default function Contact() {
                 <Instagram size={18} />
               </motion.a>
               <motion.a 
-                href="#"
+                href="https://www.facebook.com/lumatravel"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
@@ -76,7 +80,9 @@ export default function Contact() {
                 <Facebook size={18} />
               </motion.a>
               <motion.a 
-                href="#"
+                href="https://www.youtube.com/lumatravel"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 className="w-10 h-10 rounded-full border border-rolex-gold flex items-center justify-center text-rolex-gold hover:bg-rolex-gold hover:text-rolex-ivory transition-all"
