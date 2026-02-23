@@ -13,6 +13,8 @@ import Gallery from "./components/Gallery";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import CustomCursor from "./components/CustomCursor";
+import Newsletter from "./components/Newsletter";
 import { motion, useScroll, useSpring } from "motion/react";
 
 export default function App() {
@@ -32,6 +34,7 @@ export default function App() {
       />
 
       <LanguageSwitcher />
+      <CustomCursor />
 
       <Hero />
       <About />
@@ -41,6 +44,7 @@ export default function App() {
       <TourMap />
       <Gallery />
       <Contact />
+      <Newsletter />
       <Footer />
     </main>
   );

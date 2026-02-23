@@ -8,8 +8,8 @@ export const translations = {
       contact: "Contact Us",
     },
     hero: {
-      title: "Luma Travel",
-      subtitle: "Where Luxury Meets Adventure",
+      title: "",
+      subtitle: "",
     },
     about: {
       title: "The Art of Unforgettable Journeys",
@@ -53,6 +53,12 @@ export const translations = {
       email: "Email Address",
       message: "Your Message",
       send: "Send Inquiry",
+    },
+    newsletter: {
+      title: "Stay in the Loop",
+      subtitle: "Subscribe to our newsletter for exclusive offers and travel inspiration.",
+      placeholder: "Your Email Address",
+      button: "Subscribe",
     }
   },
   fi: {
@@ -62,8 +68,8 @@ export const translations = {
       contact: "Ota yhteyttä",
     },
     hero: {
-      title: "Luma Travel",
-      subtitle: "Missä luksus kohtaa seikkailun",
+      title: "",
+      subtitle: "",
     },
     about: {
       title: "Unohtumattomien matkojen taide",
@@ -107,6 +113,12 @@ export const translations = {
       email: "Sähköpostiosoite",
       message: "Viestisi",
       send: "Lähetä tiedustelu",
+    },
+    newsletter: {
+      title: "Pysy ajan tasalla",
+      subtitle: "Tilaa uutiskirjeemme saadaksesi eksklusiivisia tarjouksia ja matkainspiraatiota.",
+      placeholder: "Sähköpostiosoitteesi",
+      button: "Tilaa",
     }
   }
 };

@@ -22,15 +22,31 @@ export default function Hero() {
         <img
           src="https://i.postimg.cc/vHG5YshY/grok-image-40a4a93c-c58f-448b-8564-c02891c4bbd2.jpg"
           alt="Hero Background Image"
-          className="absolute inset-0 w-full h-full object-cover z-[-10]"
+          className="absolute inset-0 w-full h-full object-cover z-[-10] scale-90 sm:scale-100"
           referrerPolicy="no-referrer"
         />
         {/* Luxury Overlay */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-rolex-black/10 via-rolex-black/5 to-rolex-black/20" />
       </motion.div>
       
+      {/* Mobile-only image */}
+      <img
+        src="https://i.postimg.cc/C5fgfXSt/Chat-GPT-Image-Feb-23-2026-02-29-07-PM.png"
+        alt="Mobile Hero Image"
+        className="absolute inset-0 w-full h-full object-cover z-[5] block sm:hidden"
+        referrerPolicy="no-referrer"
+      />
+
       {/* Text Content */}
       <motion.div style={{ y: textY, opacity }} className="relative z-10 text-center px-4 max-w-5xl">
+        <h1 className="text-rolex-ivory text-5xl md:text-7xl lg:text-8xl font-serif leading-tight mb-4">
+          {t.hero.title.split(t.hero.italic)[0]}
+          <span className="text-rolex-gold italic">{t.hero.italic}</span>
+          {t.hero.title.split(t.hero.italic)[1]}
+        </h1>
+        <p className="text-rolex-ivory text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          {t.hero.subtitle}
+        </p>
         <motion.div 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
