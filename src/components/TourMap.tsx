@@ -8,7 +8,7 @@ const locations = [
   { name: "Sigiriya", x: 210, y: 280, day: 3 },
   { name: "Polonnaruwa", x: 250, y: 300, day: 5 },
   { name: "Pasikudah", x: 340, y: 300, day: 6 },
-  { name: "Gal Oya", x: 340, y: 400, day: 7 },
+  { name: "Polonnaruwa Gal Oya", x: 230, y: 240, day: 7 },
   { name: "Arugam Bay", x: 370, y: 460, day: 8 },
   { name: "Nuwara Eliya", x: 210, y: 440, day: 9 },
   { name: "Mirissa", x: 160, y: 580, day: 11 },

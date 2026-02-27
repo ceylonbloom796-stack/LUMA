@@ -11,7 +11,7 @@ const tours: Tour[] = [
   },
   {
     id: "2",
-    title: "Gal Oya Boat Safari",
+    title: "Polonnaruwa Gal Oya Boat Safari",
     description: "A unique aquatic adventure observing elephants swimming across the vast reservoir.",
     image: "https://www.bestoflanka.com/images/gal-oya-boat-safari-followed-by-an-evening-tea-and-snack-in-an-Island/gal-oya-boat-safari-followed-by-an-evening-tea-and-snack-in-an-Island-1.jpg"
   },

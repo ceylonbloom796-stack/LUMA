@@ -54,7 +54,7 @@ const itinerary: ItineraryDay[] = [
   },
   {
     day: 7,
-    title: "Gal Oya Boat Safari",
+    title: "Polonnaruwa Gal Oya Boat Safari",
     description: "Wildlife photography and a scenic picnic brunch.",
     activities: ["Boat Safari", "Wildlife Photography", "Picnic Brunch"],
     image: "https://www.bestoflanka.com/images/gal-oya-boat-safari-followed-by-an-evening-tea-and-snack-in-an-Island/gal-oya-boat-safari-followed-by-an-evening-tea-and-snack-in-an-Island-1.jpg"
